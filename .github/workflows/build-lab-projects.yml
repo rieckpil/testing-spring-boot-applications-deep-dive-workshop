@@ -20,7 +20,7 @@ jobs:
             "learning-module-6",
           ]
     runs-on: ubuntu-latest
-    name: Build Maven Project for ${{ matrix.module }}
+    name: Project ${{ matrix.module }}
 
     steps:
       - name: VCS checkout
@@ -33,6 +33,6 @@ jobs:
           distribution: adopt
           cache: maven
 
-      - name: Build Mavne project
+      - name: Build Maven project
         working-directory: labs/${{ matrix.module }}
         run: ./mvnw verify
