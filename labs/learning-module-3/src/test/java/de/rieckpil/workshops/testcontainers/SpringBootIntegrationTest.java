@@ -14,7 +14,7 @@ import org.testcontainers.utility.DockerImageName;
 @DataJpaTest
 class SpringBootIntegrationTest {
 
-  @TestConfiguration
+  // @TestConfiguration
   static class Config {
 
     @Bean
